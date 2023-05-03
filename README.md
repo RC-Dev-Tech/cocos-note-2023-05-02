@@ -24,7 +24,7 @@
 <br>
 
 ## 解決方式
-1. 首先，我們要先在cocos creator專案中的root位置新增一個名叫import maps.json文件，內容如下. <br>
+1. 首先，我們要先在cocos creator專案中的root位置新增一個名叫***import maps.json***文件，內容如下. <br>
 ```typescript
 // import-map.json
 {
@@ -37,7 +37,7 @@
 
 <br>
 
-2. 然後返回編輯器，單擊項目 → 項目設置 → 腳本，然後在Import maps選項中指定您剛剛創建的import-map.json文件. <br>
+2. 然後返回編輯器，單擊項目 → 項目設置 → 腳本，然後在Import maps選項中指定您剛剛創建的***import-map.json***文件. <br>
 <img src="https://drive.google.com/uc?id=1Hh6V9W8Ydi_OSPM9eRNDY4FBZEoPDmxy" width=50% height=50%/>
 <img src="https://drive.google.com/uc?id=109ttdQYowWTpzi2kl_LXOHGh-ahEj-9J" width=70% height=70%/>
 
