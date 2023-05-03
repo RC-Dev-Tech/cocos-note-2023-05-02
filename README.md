@@ -16,7 +16,8 @@
 在NPM眾多套件中，並不是每個套件，都有支援在原生ESM模組系統上執行， <br>
 所以即使npm install後，並寫入package.json，也是會有找不到的問題. <br>
 
-關於這個問題，官方在cocos creator v3.3版本中，新增了一項功能，叫做***import maps***. <br>
+關於這個問題，官方在cocos creator v3.3版本中，<br>
+新增了一項功能，叫做***import maps***. <br>
 透過映射的方式，直接跳過package.json，直接導入想要使用的套件位置. <br>
 
 ---
