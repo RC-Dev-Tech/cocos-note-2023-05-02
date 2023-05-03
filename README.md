@@ -33,7 +33,7 @@
 }
 ```
 
-![](https://drive.google.com/uc?id=1cKeKLErG4dnPn97iVP1t4krt6cnJ3mdT)
+![](https://drive.google.com/uc?id=1gnAFekQodjmx9RigPn2ez-msAuhmPZvW)
 
 <br>
 
