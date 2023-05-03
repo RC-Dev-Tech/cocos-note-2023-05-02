@@ -23,45 +23,28 @@
 <br>
 
 ## 解決方式
-1.首先，我們要先在cocos creator專案中的root位置新增一個名叫import maps.json文件
-安裝***socket.io-client***
+1.首先，我們要先在cocos creator專案中的root位置新增一個名叫import maps.json文件. <br>
 ```typescript
-npm install socket.io-client
-```
-
-<br>
-
-2.在cocos creator的專案中新增ts檔案，這邊我們可以命名成socket.io-client.d.ts***，並且在裡面新增以下代碼.
-```typescript
-declare module "socket.io-client/dist/socket.io.js" {
-    export * from "socket.io-client";
+// import-map.json
+{
+    "imports": {
+        "socket.io-client": "./node_modules/socket.io-client/dist/socket.io.js"
+    }
 }
 ```
-> 上面的代碼主要是調整指向於套件的位置. <br>
-> 當我們在import "socket.io-client" 導入專用於 Node.js 的套件，其主要模塊需要Node.js內置包才能工作。<br>
-> 如果要在cocos Creator 中使用它，那我們應該要使用編譯後的版本，<br>
-> import io from 'socket.io-client/dist/socket.io.js';<br>
+
+![](https://drive.google.com/uc?id=1cKeKLErG4dnPn97iVP1t4krt6cnJ3mdT)
 
 <br>
 
-3. 當上述檔案創建完畢後，即可切回cocos creator，會看見cocos會自動創建meta檔案，好讓專案可以順利的include.<br>
-接下來我們就可以直接import使用，如下：
-```typescript
-import { io } from 'socket.io-client/dist/socket.io.js';
-```
-
-<br>
-
-4. import 完之後，接下來就可以直接使用，其用法就跟socket.io的用法一樣，這邊就不多敘述.
-
-<br>
+待續...
 
 ---
 <br>
 
 ## 參考資料
-* [cocos - Standard network interface](https://docs.cocos.com/creator/2.4/manual/en/scripting/network.html) <br>
-* [V3.0 and Socket.io-client NPM module](https://discuss.cocos2d-x.org/t/v3-0-and-socket-io-client-npm-module/52910) <br>
+* [cocos - Import Maps (experimental)](https://docs.cocos.com/creator/3.3/manual/en/scripting/modules/import-map.html) <br>
+* [yufang.wu - Cocos Creator v3.0 and NPM Modules](https://discuss.cocos2d-x.org/t/cocos-creator-v3-0-and-npm-modules/52742/11) <br>
 
 ---
 <!--ts-->
