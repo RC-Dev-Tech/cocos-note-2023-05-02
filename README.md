@@ -23,7 +23,7 @@
 <br>
 
 ## 解決方式
-1.首先，我們要先在cocos creator專案中的root位置新增一個名叫import maps.json文件. <br>
+1.首先，我們要先在cocos creator專案中的root位置新增一個名叫import maps.json文件，內容如下. <br>
 ```typescript
 // import-map.json
 {
