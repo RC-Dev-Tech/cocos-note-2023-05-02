@@ -23,7 +23,7 @@
 <br>
 
 ## 解決方式
-1.首先，我們要先在cocos creator專案中的root位置新增一個名叫import maps.json文件，內容如下. <br>
+1. 首先，我們要先在cocos creator專案中的root位置新增一個名叫import maps.json文件，內容如下. <br>
 ```typescript
 // import-map.json
 {
@@ -32,12 +32,46 @@
     }
 }
 ```
-
 ![](https://drive.google.com/uc?id=1gnAFekQodjmx9RigPn2ez-msAuhmPZvW)
 
 <br>
 
-待續...
+2. 然後返回編輯器，單擊項目 → 項目設置 → 腳本，然後在Import maps選項中指定您剛剛創建的import-map.json文件. <br>
+<img src="https://drive.google.com/uc?id=1Hh6V9W8Ydi_OSPM9eRNDY4FBZEoPDmxy" width=50% height=50%/>
+<img src="https://drive.google.com/uc?id=109ttdQYowWTpzi2kl_LXOHGh-ahEj-9J" width=70% height=70%/>
+
+<br>
+
+3. 重新啟動編輯器（設置Import maps後需要重新啟動）
+4. 設置後，就可以直接引入，使用方式如下:
+> import io from 'socket.io-client'; <br>
+> let socket = io("http://localhost:3000"); <br>
+
+<br>
+
+***範例代碼:***
+```typescript
+import { _decorator, Component, Node } from 'cc';
+import io from 'socket.io-client';
+const { ccclass, property } = _decorator;
+
+@ccclass('main')
+export class main extends Component {
+    start() {
+        console.log("Starting connection to socket.io server");
+        let socket = io("http://localhost:3000");
+
+        // client-side
+        socket.on("connect", () => {
+            console.log(`Socket.ID: ${socket.id}`); // x8WIv7-mJelg7on_ALbx
+        });
+    }
+
+    update(deltaTime: number) {
+        
+    }
+}
+```
 
 ---
 <br>
