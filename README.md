@@ -1,6 +1,6 @@
 # ![](https://drive.google.com/uc?id=10INx5_pkhMcYRdx_OO4rXNXxcsvPtBYq) How to import NPM Modules on cocos creator (v3.3+)
 
-<br>
+---
 
 <!--ts-->
 ## 目錄
@@ -10,7 +10,6 @@
 <!--te-->
 
 ---
-<br>
 
 ## 簡介
 在NPM眾多套件中，並不是每個套件，都有支援在原生ESM模組系統上執行， <br>
@@ -20,7 +19,6 @@
 透過映射的方式，直接跳過package.json，直接導入想要使用的套件位置. <br>
 
 ---
-<br>
 
 ## 解決方式
 1. 安裝想要導入的NPM套件，如下: <br>
@@ -79,7 +77,6 @@ export class main extends Component {
 ```
 
 ---
-<br>
 
 ## 參考資料
 * [cocos - Import Maps (experimental)](https://docs.cocos.com/creator/3.3/manual/en/scripting/modules/import-map.html) <br>
